@@ -7,14 +7,6 @@
 
 ! function($) {
     "use strict";    
-    // Loader 
-    $(window).on('load', function() {
-        $('#status').fadeOut();
-        $('#preloader').delay(350).fadeOut('slow');
-        $('body').delay(350).css({
-            'overflow': 'visible'
-        });
-    });
     // Menu
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
@@ -37,17 +29,6 @@
     // Scrollspy
     $("#navbarCollapse").scrollspy({ offset: 70 });
     
-    // Magnific Popup
-    $('.mfp-image').magnificPopup({
-        type: 'image',
-        closeOnContentClick: true,
-        mainClass: 'mfp-fade',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1]
-        }
-    });
     // BACK TO TOP
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
